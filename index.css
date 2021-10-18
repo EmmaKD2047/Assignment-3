@@ -1,0 +1,184 @@
+@media screen and (max-width: 768px){
+    div.center{
+        width: 90%;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Spartan', sans-serif;
+}
+
+.dine{
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: white;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .text{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.text input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: 'Spartan', sans-serif;
+}
+
+.text label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.text span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.text input:focus ~ label,
+.text input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+
+}
+
+.text input:focus ~ span::before,
+.text input:valid ~ span::before{
+    width: 100%;
+}
+
+.date, .time{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.datea{
+    padding-top: 20px;
+}
+
+.date1 input{
+    width: 50px;
+    text-align: center;
+    width: 50px;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #adadad;
+    font-family: 'Spartan', sans-serif;
+}
+
+.timea{
+    padding-top: 10px;
+}
+
+.time1{
+    border-bottom: 2px solid #adadad; 
+}
+
+.time1 input{
+    width: 50px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+}
+
+#time2{
+    border: none;
+    border-bottom: 2px solid #adadad;
+    padding: 5px;
+}
+
+select{
+    outline: none;
+    border-color: transparent;
+    font-family: 'Spartan', sans-serif;
+}
+
+option{
+    font-family: 'Spartan', sans-serif;
+}
+
+.add{
+    display: flex;
+    margin-top: 30px;
+}
+
+#people{
+    width: 95%;
+    text-align: center;
+}
+
+#dec{
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+#plu{
+    position: relative;
+    top: 20px;
+    right: 30px;
+}
+
+hr{
+    margin-bottom: 30px;
+}
+
+button{
+    color: white;
+    background: black;
+    padding: 20px;
+    width: 100%;
+    border-color: transparent;
+    margin-bottom: 30px;
+    font-family: 'Spartan', sans-serif;
+}
+
+button:hover{
+    border: 1px solid black;
+    background: white;
+    color: black;
+}
